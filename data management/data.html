@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Table</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <style>
+    .headerr {
+      -webkit-tap-highlight-color: transparent;
+      --blue: #007bff;
+      --indigo: #6610f2;
+      --purple: #6f42c1;
+      --pink: #e83e8c;
+      --red: #dc3545;
+      --orange: #fd7e14;
+      --yellow: #ffc107;
+      --green: #28a745;
+      --teal: #20c997;
+      --cyan: #17a2b8;
+      --white: #fff;
+      --gray: #6c757d;
+      --gray-dark: #343a40;
+      --primary: #007bff;
+      --secondary: #6c757d;
+      --success: #28a745;
+      --info: #17a2b8;
+      --warning: #ffc107;
+      --danger: #dc3545;
+      --light: #f8f9fa;
+      --dark: #343a40;
+      --breakpoint-xs: 0;
+      --breakpoint-sm: 576px;
+      --breakpoint-md: 768px;
+      --breakpoint-lg: 992px;
+      --breakpoint-xl: 1200px;
+      --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: 1.5;
+      color: #212529;
+      text-align: left;
+      box-sizing: border-box;
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: .5rem 1rem;
+      background-color: #113448;
+    }
+
+    .modal {
+      display: none;
+      /* Hidden by default */
+      position: fixed;
+      /* Stay in place */
+      z-index: 1;
+      /* Sit on top */
+      padding-top: 100px;
+      /* Location of the box */
+      left: 0;
+      top: 0;
+      width: 100%;
+      /* Full width */
+      height: 100%;
+      /* Full height */
+      overflow: auto;
+      /* Enable scroll if needed */
+      background-color: rgba(0, 0, 0, 0.4);
+      /* Black w/ opacity */
+    }
+
+    /* Modal Content */
+    .modal-content {
+      background-color: white;
+      margin: auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+    }
+
+    /* The Close Button */
+    .close {
+      color: #aaaaaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+
+
+</head>
+
+<body>
+
+  <div class="card">
+    <div class="card-header headerr">
+
+      <div class="navbar navbar-dark themecolor"  style="background: transparent;">
+        <a class="navbar-brand" href="#">
+            <img src="assets/gratis-png-ip-de-datos-del-subsistema-multimedia-ip-de-video-ims.png" width="100" height="40" alt="" loading="lazy">
+        </a>
+        <div class="nav-item">
+            <a href="index.html" class="navbar-brand">Home</a>
+            <a href="" class="navbar-brand">Data</a>
+            <a href="" class="navbar-brand">Services</a>
+            <a href="" class="navbar-brand">Call Me</a>
+            <a href="" class="navbar-brand">Projects</a>
+            <a href="" class="navbar-brand">About</a>
+            <a href="" class="navbar-brand">Contact</a>
+            <a href="https://facebook.com" class="navbar-brand"><i class="fa fa-facebook-square" style="font-size:20px;color:white"></i></a>
+
+            <a href="https://twitter.com" class="navbar-brand"><i class="fa fa-twitter-square" style="font-size:20px;color: white;"></i></a>
+
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+    <div class="card-body">
+      <!-- <h4 class="card-title">Title</h4> -->
+      <div class="">
+        <table class="table">
+          <!-- <caption>List of users</caption> -->
+          <thead>
+            <tr>
+              <th scope="col">Id</th>
+              <th scope="col">Name</th>
+              <th scope="col">Email</th>
+              <th scope="col">Number</th>
+              <th scope="col">Actions</th>
+            </tr>
+          </thead>
+          <tbody id="print">
+          </tbody>
+        </table>
+        <div class="modal" id="modal">
+          <div class="modal-content" id="modal-content">
+            <div class="row">
+              <div class="col-sm-1-12">
+                <input type="text" class="form-control" name="" id="newName" placeholder="Name">
+              </div>
+
+              <div class="col-sm-1"></div>
+              <div class="col-sm-1-12">
+                <input type="text" class="form-control" name="" id="newEmail" placeholder="Email">
+              </div>
+              <div class="col-sm-1"></div>
+              <div class="col-sm-1-12">
+                <input type="text" class="form-control" name="" id="newNumber" placeholder="Phone Number">
+              </div>
+            </div>
+
+            <div class="modal-footer">
+              <button onclick="mClose(); return false" type="submit" class="btn btn-primary">Close</button>
+              <button onclick="mSave(); return false" type="submit" class="btn btn-primary">Save</button>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+
+
+
+
+      <!-- ---------------------------------------------------------------------- -->
+      <script>
+        var index1 = 0;
+        var arr2 = []
+        var modal = document.getElementById("modal")
+        var modalContent = document.getElementById("modal-content")
+        getData();
+
+        function del(index) {
+          let xhr = new XMLHttpRequest();
+          xhr.open("DELETE", "http://localhost:3000/data/"+index, true)
+          xhr.setRequestHeader('content-type', 'application/json')
+          xhr.onload=function(){
+          console.log(index)
+          getData(); 
+          }
+          xhr.send()
+        }
+
+        function getData() {
+          let s = "";
+          let xhr = new XMLHttpRequest();
+          xhr.open("GET", "http://localhost:3000/data", true)
+          xhr.setRequestHeader('content-type', 'application/json')
+          xhr.onprogress = function () {
+            console.log("on progress")
+          }
+          xhr.onload = function () {
+            let arr2 = JSON.parse(this.response)
+            for (let i = 0; i < arr2.length; i++) {
+                s = s + `<tr>
+                <td>${i}</td>
+                <td>${arr2[i].StName}</td>
+                <td>${arr2[i].StEmail}</td>
+                <td>${arr2[i].StNumber}</td>
+                <td>
+                <button onclick="del(${arr2[i].id}); return false" type="submit" class="btn btn-primary" >Delete</button>
+                <button onclick="fModal(${arr2[i].id}); return false" type="submit" class="btn btn-primary" >Edit</button>
+                </td>
+                </tr>
+                `
+            }
+            document.getElementById('print').innerHTML = s;
+          }
+          xhr.send()
+        }
+
+
+        function fModal(i) {
+          modal.style.display = "block"
+          index1 = i;
+        }
+
+        function mClose() {
+          modal.style.display = "none"
+
+        }
+
+        function mSave() {
+          var name = document.getElementById("newName").value;
+          var email = document.getElementById("newEmail").value;
+          var number = document.getElementById("newNumber").value;
+          var data11={}
+          if(name){
+            data11.StName=name
+          }
+          if(email){
+            data11.StEmail=email 
+          }
+          if(number){
+            data11.StNumber=number 
+          }
+          let xhr = new XMLHttpRequest();
+          xhr.open("PATCH", "http://localhost:3000/data/"+index1,true)
+          xhr.setRequestHeader('content-type', 'application/json')
+          xhr.onprogress = function () {
+          }
+          xhr.onload=function(){
+          }
+          xhr.send(JSON.stringify(data11))
+          getData()
+          mClose()
+        }
+
+
+
+      </script>
+
+      <!-- <div class="card-footer text-muted">
+            Footer
+        </div> -->
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

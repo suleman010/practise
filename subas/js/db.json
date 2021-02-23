@@ -1,0 +1,544 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "productName": "Samsung a7",
+      "productModel": "a7",
+      "productPrice": 50,
+      "productImage": "img/product/1.jpg",
+      "productCartImage": "img/cart/1.jpg",
+      "productColor": [
+        "white",
+        "black"
+      ],
+      "brandId": 1,
+      "categoryId": 1,
+      "operatingsystemId": 1
+    },
+    {
+      "id": 2,
+      "productName": "Samsung a7",
+      "productModel": "a7",
+      "productPrice": 150,
+      "productImage": "img/product/2.jpg",
+      "productCartImage": "img/cart/2.jpg",
+      "productColor": [
+        "white",
+        "black"
+      ],
+      "brandId": 1,
+      "categoryId": 1,
+      "operatingsystemId": 1
+    },
+    {
+      "id": 3,
+      "productName": "Apple Iphone 10",
+      "productModel": "10",
+      "productPrice": 750,
+      "productImage": "img/product/3.jpg",
+      "productCartImage": "img/cart/3.jpg",
+      "productColor": [
+        "white",
+        "black"
+      ],
+      "brandId": 2,
+      "categoryId": 1,
+      "operatingsystemId": 2
+    },
+    {
+      "id": 4,
+      "productName": "Apple Iphone 12",
+      "productModel": "12",
+      "productPrice": 990,
+      "productImage": "img/product/4.jpg",
+      "productCartImage": "img/cart/4.jpg",
+      "productColor": [
+        "white",
+        "black"
+      ],
+      "brandId": 2,
+      "categoryId": 1,
+      "operatingsystemId": 2
+    },
+    {
+      "id": 5,
+      "productName": "Apple tablet 1",
+      "productModel": "1",
+      "productPrice": 850,
+      "productImage": "img/product/5.jpg",
+      "productCartImage": "img/cart/5.jpg",
+      "productColor": [
+        "white",
+        "black"
+      ],
+      "brandId": 2,
+      "categoryId": 2,
+      "operatingsystemId": 2
+    },
+    {
+      "id": 6,
+      "productName": "Samsung a7",
+      "productModel": "a7",
+      "productPrice": 850,
+      "productImage": "img/product/6.jpg",
+      "productCartImage": "img/cart/6.jpg",
+      "productColor": [
+        "white",
+        "grey"
+      ],
+      "brandId": 1,
+      "categoryId": 1,
+      "operatingsystemId": 1
+    },
+    {
+      "id": 7,
+      "productName": "Samsung a7",
+      "productModel": "a7",
+      "productPrice": 250,
+      "productImage": "img/product/7.jpg",
+      "productCartImage": "img/cart/7.jpg",
+      "productColor": [
+        "silver",
+        "black"
+      ],
+      "brandId": 1,
+      "categoryId": 1,
+      "operatingsystemId": 1
+    },
+    {
+      "id": 8,
+      "productName": "Samsung watch z90",
+      "productModel": "z90",
+      "productPrice": 80,
+      "productImage": "img/product/8.jpg",
+      "productCartImage": "img/cart/8.jpg",
+      "productColor": [
+        "white",
+        "red"
+      ],
+      "brandId": 1,
+      "categoryId": 3,
+      "operatingsystemId": 1
+    },
+    {
+      "id": 9,
+      "productName": "Samsung Tab 21",
+      "productModel": "21",
+      "productPrice": 200,
+      "productImage": "img/product/9.jpg",
+      "productCartImage": "img/cart/9.jpg",
+      "productColor": [
+        "blue"
+      ],
+      "brandId": 1,
+      "categoryId": 2,
+      "operatingsystemId": 1
+    }
+  ],
+  "categorys": [
+    {
+      "id": 1,
+      "name": "smartphone"
+    },
+    {
+      "id": 2,
+      "name": "tab"
+    },
+    {
+      "id": 3,
+      "name": "watch"
+    },
+    {
+      "id": 4,
+      "name": "headphone"
+    }
+  ],
+  "brands": [
+    {
+      "name": "samsung",
+      "id": 1
+    },
+    {
+      "name": "apple",
+      "id": 2
+    }
+  ],
+  "operatingsystem": [
+    {
+      "name": "android",
+      "id": 1
+    },
+    {
+      "name": "ios",
+      "id": 2
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "productName": "Samsung a7",
+      "productModel": "a7",
+      "productPrice": 50,
+      "productImage": "img/product/1.jpg",
+      "productCartImage": "img/cart/1.jpg",
+      "productColor": [
+        "white",
+        "black"
+      ],
+      "brandId": 1,
+      "categoryId": 1,
+      "operatingsystemId": 1,
+      "quantity": "1"
+    },
+    {
+      "id": 2,
+      "productName": "Samsung a7",
+      "productModel": "a7",
+      "productPrice": 150,
+      "productImage": "img/product/2.jpg",
+      "productCartImage": "img/cart/2.jpg",
+      "productColor": [
+        "white",
+        "black"
+      ],
+      "brandId": 1,
+      "categoryId": 1,
+      "operatingsystemId": 1,
+      "quantity": "1"
+    }
+  ],
+  "order": [
+    {
+      "products": [
+        {
+          "id": 1,
+          "productName": "Samsung a7",
+          "productModel": "a7",
+          "productPrice": 50,
+          "productImage": "img/product/1.jpg",
+          "productCartImage": "img/cart/1.jpg",
+          "productColor": [
+            "white",
+            "black"
+          ],
+          "brandId": 1,
+          "categoryId": 1,
+          "operatingsystemId": 1,
+          "quantity": 2
+        }
+      ],
+      "orderCost": 115,
+      "id": 1,
+      "fakeOrderNumber": "157691"
+    },
+    {
+      "products": [
+        {
+          "id": 1,
+          "productName": "Samsung a7",
+          "productModel": "a7",
+          "productPrice": 50,
+          "productImage": "img/product/1.jpg",
+          "productCartImage": "img/cart/1.jpg",
+          "productColor": [
+            "white",
+            "black"
+          ],
+          "brandId": 1,
+          "categoryId": 1,
+          "operatingsystemId": 1,
+          "quantity": "1"
+        }
+      ],
+      "orderCost": 65,
+      "id": 2,
+      "fakeOrderNumber": "-353432"
+    },
+    {
+      "products": [
+        {
+          "id": 1,
+          "productName": "Samsung a7",
+          "productModel": "a7",
+          "productPrice": 50,
+          "productImage": "img/product/1.jpg",
+          "productCartImage": "img/cart/1.jpg",
+          "productColor": [
+            "white",
+            "black"
+          ],
+          "brandId": 1,
+          "categoryId": 1,
+          "operatingsystemId": 1,
+          "quantity": "1"
+        }
+      ],
+      "orderCost": 65,
+      "id": 3,
+      "fakeOrderNumber": "-354843"
+    },
+    {
+      "products": [
+        {
+          "id": 1,
+          "productName": "Samsung a7",
+          "productModel": "a7",
+          "productPrice": 50,
+          "productImage": "img/product/1.jpg",
+          "productCartImage": "img/cart/1.jpg",
+          "productColor": [
+            "white",
+            "black"
+          ],
+          "brandId": 1,
+          "categoryId": 1,
+          "operatingsystemId": 1,
+          "quantity": 2
+        }
+      ],
+      "orderCost": 115,
+      "id": 4,
+      "fakeOrderNumber": "158784"
+    },
+    {
+      "products": [
+        {
+          "id": 7,
+          "productName": "Samsung a7",
+          "productModel": "a7",
+          "productPrice": 250,
+          "productImage": "img/product/7.jpg",
+          "productCartImage": "img/cart/7.jpg",
+          "productColor": [
+            "silver",
+            "black"
+          ],
+          "brandId": 1,
+          "categoryId": 1,
+          "operatingsystemId": 1,
+          "quantity": "1"
+        },
+        {
+          "id": 9,
+          "productName": "Samsung Tab 21",
+          "productModel": "21",
+          "productPrice": 200,
+          "productImage": "img/product/9.jpg",
+          "productCartImage": "img/cart/9.jpg",
+          "productColor": [
+            "blue"
+          ],
+          "brandId": 1,
+          "categoryId": 2,
+          "operatingsystemId": 1,
+          "quantity": "1"
+        }
+      ],
+      "orderCost": 465,
+      "id": 5,
+      "fakeOrderNumber": "365495"
+    },
+    {
+      "products": [
+        {
+          "id": 7,
+          "productName": "Samsung a7",
+          "productModel": "a7",
+          "productPrice": 250,
+          "productImage": "img/product/7.jpg",
+          "productCartImage": "img/cart/7.jpg",
+          "productColor": [
+            "silver",
+            "black"
+          ],
+          "brandId": 1,
+          "categoryId": 1,
+          "operatingsystemId": 1,
+          "quantity": "1"
+        },
+        {
+          "id": 8,
+          "productName": "Samsung watch z90",
+          "productModel": "z90",
+          "productPrice": 80,
+          "productImage": "img/product/8.jpg",
+          "productCartImage": "img/cart/8.jpg",
+          "productColor": [
+            "white",
+            "red"
+          ],
+          "brandId": 1,
+          "categoryId": 3,
+          "operatingsystemId": 1,
+          "quantity": "1"
+        },
+        {
+          "id": 1,
+          "productName": "Samsung a7",
+          "productModel": "a7",
+          "productPrice": 50,
+          "productImage": "img/product/1.jpg",
+          "productCartImage": "img/cart/1.jpg",
+          "productColor": [
+            "white",
+            "black"
+          ],
+          "brandId": 1,
+          "categoryId": 1,
+          "operatingsystemId": 1,
+          "quantity": 2
+        }
+      ],
+      "orderCost": 445,
+      "id": 6,
+      "fakeOrderNumber": "3452186"
+    },
+    {
+      "products": [
+        {
+          "id": 1,
+          "productName": "Samsung a7",
+          "productModel": "a7",
+          "productPrice": 50,
+          "productImage": "img/product/1.jpg",
+          "productCartImage": "img/cart/1.jpg",
+          "productColor": [
+            "white",
+            "black"
+          ],
+          "brandId": 1,
+          "categoryId": 1,
+          "operatingsystemId": 1,
+          "quantity": 2
+        },
+        {
+          "id": 3,
+          "productName": "Apple Iphone 10",
+          "productModel": "10",
+          "productPrice": 750,
+          "productImage": "img/product/3.jpg",
+          "productCartImage": "img/cart/3.jpg",
+          "productColor": [
+            "white",
+            "black"
+          ],
+          "brandId": 2,
+          "categoryId": 1,
+          "operatingsystemId": 2,
+          "quantity": 1
+        }
+      ],
+      "orderCost": 865,
+      "id": 7,
+      "fakeOrderNumber": "7652327"
+    },
+    {
+      "products": [
+        {
+          "id": 1,
+          "productName": "Samsung a7",
+          "productModel": "a7",
+          "productPrice": 50,
+          "productImage": "img/product/1.jpg",
+          "productCartImage": "img/cart/1.jpg",
+          "productColor": [
+            "white",
+            "black"
+          ],
+          "brandId": 1,
+          "categoryId": 1,
+          "operatingsystemId": 1,
+          "quantity": "1"
+        },
+        {
+          "id": 3,
+          "productName": "Apple Iphone 10",
+          "productModel": "10",
+          "productPrice": 750,
+          "productImage": "img/product/3.jpg",
+          "productCartImage": "img/cart/3.jpg",
+          "productColor": [
+            "white",
+            "black"
+          ],
+          "brandId": 2,
+          "categoryId": 1,
+          "operatingsystemId": 2,
+          "quantity": "1"
+        }
+      ],
+      "orderCost": 815,
+      "id": 8,
+      "fakeOrderNumber": "7155738"
+    },
+    {
+      "products": [
+        {
+          "id": 1,
+          "productName": "Samsung a7",
+          "productModel": "a7",
+          "productPrice": 50,
+          "productImage": "img/product/1.jpg",
+          "productCartImage": "img/cart/1.jpg",
+          "productColor": [
+            "white",
+            "black"
+          ],
+          "brandId": 1,
+          "categoryId": 1,
+          "operatingsystemId": 1,
+          "quantity": "1"
+        }
+      ],
+      "orderCost": 65,
+      "id": 9,
+      "fakeOrderNumber": "-35999"
+    },
+    {
+      "products": [
+        {
+          "id": 4,
+          "productName": "Apple Iphone 12",
+          "productModel": "12",
+          "productPrice": 990,
+          "productImage": "img/product/4.jpg",
+          "productCartImage": "img/cart/4.jpg",
+          "productColor": [
+            "white",
+            "black"
+          ],
+          "brandId": 2,
+          "categoryId": 1,
+          "operatingsystemId": 2,
+          "quantity": "1"
+        }
+      ],
+      "orderCost": 1005,
+      "id": 10,
+      "fakeOrderNumber": "90574610"
+    },
+    {
+      "products": [
+        {
+          "id": 1,
+          "productName": "Samsung a7",
+          "productModel": "a7",
+          "productPrice": 50,
+          "productImage": "img/product/1.jpg",
+          "productCartImage": "img/cart/1.jpg",
+          "productColor": [
+            "white",
+            "black"
+          ],
+          "brandId": 1,
+          "categoryId": 1,
+          "operatingsystemId": 1,
+          "quantity": "1"
+        }
+      ],
+      "orderCost": 65,
+      "id": 11,
+      "fakeOrderNumber": "-3552411"
+    }
+  ]
+}
