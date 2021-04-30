@@ -7,7 +7,7 @@ json/db.json
 --------------------------
 JSON FILE PATH FOR SUBAS :js/db.json
 
---------------------------
+---------------------------
 Data Management: Create edit delete entity. all data stored in json.
 
 
